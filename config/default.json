@@ -1,0 +1,5 @@
+{
+  "PORT": "5000",
+  "jwtSecret": "mysecrettoken",
+  "mongoURI": "mongodb+srv://db0:database0@cluster0.tymme.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
