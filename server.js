@@ -1,5 +1,4 @@
 const express = require('express');
-const config = require('config');
 const connectDB = require('./config/db');
 const cors = require('cors');
 // const path = require('path');
@@ -19,9 +18,8 @@ app.use(cors());
 app.use(express.json({ extended: false }));
 
 //Routes middleware
-app.use('/api/user', require('./routes/api/users'));
-app.use('/api/auth', require('./routes/api/auth'));
-app.use('/api/post', require('./routes/api/posts'));
+app.use('/api/user', require('./routes/api/user'));
+app.use('/api/blog', require('./routes/api/blog'));
 
 // //Serve static assets in production
 // if (process.env.NODE_ENV === 'production') {
