@@ -21,16 +21,6 @@ app.use(express.json({ extended: false }));
 app.use('/api/user', require('./routes/api/user'));
 app.use('/api/blog', require('./routes/api/blog'));
 
-// //Serve static assets in production
-// if (process.env.NODE_ENV === 'production') {
-//   //Set static folder
-//   app.use(express.static('client/build'));
-
-//   app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'clien', 'build', 'index.html'));
-//   });
-// }
-
 app.listen(PORT, () => {
   console.log(`Server started on port  ${PORT}`);
 });

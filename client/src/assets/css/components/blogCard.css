@@ -1,11 +1,18 @@
+/********************************** Blog *****************************/
 .blog-card-container {
-  width: 300px;
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
 }
 
 .card-img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  width: 30%;
 }
 
 .card-title {

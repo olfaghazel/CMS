@@ -3,7 +3,7 @@ const config = require('config');
 
 const auth = (req, res, next) => {
   //Get token from header
-  const token = req.header('x-auth-token');
+  const token = req.header('token');
 
   //Check if there is no token
   if (!token) {

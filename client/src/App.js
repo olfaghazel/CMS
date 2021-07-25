@@ -1,13 +1,13 @@
-import './App.css';
-import './assets/css/blogCard.css';
-import './assets/css/loginRegister.css';
-import Navbar from './components/Navbar';
+import './assets/css/components/blogCard.css';
+import './assets/css/layouts/loginRegister.css';
+import './assets/css/layouts/blogDisplay.css';
+import './assets/css/components/alert.css';
+
 import Routes from './Routes';
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
       <Routes />
     </div>
   );

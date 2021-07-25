@@ -7,6 +7,7 @@ const headers = {
   token: localStorage.getItem('token') ? localStorage.getItem('token') : '',
 };
 
+// Get API
 export var getApi = async (option) => {
   return await axios
     .get(`${link}/${option}`, {
@@ -16,10 +17,11 @@ export var getApi = async (option) => {
       return response.data;
     })
     .catch((error) => {
-      return error;
+      return { error: error.response.data.errors };
     });
 };
 
+// Post API
 export var postApi = async (option, data) => {
   return await axios
     .post(`${link}/${option}`, data, {
@@ -30,6 +32,6 @@ export var postApi = async (option, data) => {
       return response.data;
     })
     .catch((error) => {
-      return error;
+      return { error: error.response.data.errors };
     });
 };
